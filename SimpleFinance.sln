@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleFinance.Domain", "SimpleFinance.Domain\SimpleFinance.Domain.csproj", "{37E89ACE-44A4-4F3A-8201-F1455EFB7280}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F98A89FC-F5FC-42EA-B89B-6F12DDF30EA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "main", "main", "{43E6CB10-9B29-48E7-ADEC-0D803808AF0A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{274F35D5-9E74-4579-A9AC-4A2DE13C263D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "stocks", "stocks", "{943A8029-287A-4E4F-BD91-01334593A2AC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleFinance.StocksService.Api", "SimpleFinance.StocksService\SimpleFinance.StocksService.Api.csproj", "{BA94C2F3-4B0B-4D6E-BC48-8AE1275ABB7F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleFinance.StocksService.Application", "SimpleFinance.StocksService.Application\SimpleFinance.StocksService.Application.csproj", "{A2977009-7090-48EF-9E0C-3CE97400A831}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{86500491-2AE5-4CA4-B9CC-C34ABF7528A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFinance.Shared.Abstractions", "SimpleFinance.Shared.Abstractions\SimpleFinance.Shared.Abstractions.csproj", "{D8412AB7-1068-4865-A830-B780F403C632}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37E89ACE-44A4-4F3A-8201-F1455EFB7280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37E89ACE-44A4-4F3A-8201-F1455EFB7280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37E89ACE-44A4-4F3A-8201-F1455EFB7280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37E89ACE-44A4-4F3A-8201-F1455EFB7280}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA94C2F3-4B0B-4D6E-BC48-8AE1275ABB7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA94C2F3-4B0B-4D6E-BC48-8AE1275ABB7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA94C2F3-4B0B-4D6E-BC48-8AE1275ABB7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA94C2F3-4B0B-4D6E-BC48-8AE1275ABB7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2977009-7090-48EF-9E0C-3CE97400A831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2977009-7090-48EF-9E0C-3CE97400A831}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2977009-7090-48EF-9E0C-3CE97400A831}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2977009-7090-48EF-9E0C-3CE97400A831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8412AB7-1068-4865-A830-B780F403C632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8412AB7-1068-4865-A830-B780F403C632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8412AB7-1068-4865-A830-B780F403C632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8412AB7-1068-4865-A830-B780F403C632}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{37E89ACE-44A4-4F3A-8201-F1455EFB7280} = {43E6CB10-9B29-48E7-ADEC-0D803808AF0A}
+		{43E6CB10-9B29-48E7-ADEC-0D803808AF0A} = {F98A89FC-F5FC-42EA-B89B-6F12DDF30EA3}
+		{274F35D5-9E74-4579-A9AC-4A2DE13C263D} = {F98A89FC-F5FC-42EA-B89B-6F12DDF30EA3}
+		{943A8029-287A-4E4F-BD91-01334593A2AC} = {274F35D5-9E74-4579-A9AC-4A2DE13C263D}
+		{BA94C2F3-4B0B-4D6E-BC48-8AE1275ABB7F} = {943A8029-287A-4E4F-BD91-01334593A2AC}
+		{A2977009-7090-48EF-9E0C-3CE97400A831} = {943A8029-287A-4E4F-BD91-01334593A2AC}
+		{86500491-2AE5-4CA4-B9CC-C34ABF7528A1} = {F98A89FC-F5FC-42EA-B89B-6F12DDF30EA3}
+		{D8412AB7-1068-4865-A830-B780F403C632} = {86500491-2AE5-4CA4-B9CC-C34ABF7528A1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A8E00DF-73E1-4C5A-B0A0-01F6642AA77E}
+	EndGlobalSection
+EndGlobal
