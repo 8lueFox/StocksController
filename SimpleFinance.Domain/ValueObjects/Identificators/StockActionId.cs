@@ -7,4 +7,10 @@ public class StockActionId : ObjectId
         if (value == Guid.Empty)
             throw new EmptyIdException(this.GetType().ToString());
     }
+
+    public static implicit operator Guid(StockActionId id)
+        => id.Value;
+
+    public static implicit operator StockActionId(Guid id)
+        => new(id);
 }

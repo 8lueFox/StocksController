@@ -9,6 +9,7 @@ public class StockAction : AggregateRoot<StockActionId>
 
     public StockAction(float quantity, float price, DateTime actionTime, StockActionType actionType)
     {
+        Id = Guid.NewGuid();
         ActionType = actionType;
         Quantity = quantity;
         Price = price;

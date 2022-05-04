@@ -7,4 +7,10 @@ public class WalletId : ObjectId
         if (value == Guid.Empty)
             throw new EmptyIdException(this.GetType().ToString());
     }
+
+    public static implicit operator Guid(WalletId id)
+        => id.Value;
+
+    public static implicit operator WalletId(Guid id)
+        => new(id);
 }

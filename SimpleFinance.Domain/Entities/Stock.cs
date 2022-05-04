@@ -16,6 +16,11 @@ public class Stock : AggregateRoot<StockId>
         _items = new();
     }
 
+    public Stock(StockName name, ExchangeName exchange)
+        :this(Guid.NewGuid(), name, exchange)
+    {
+    }
+
     public Stock(StockId stockId, StockName name, ExchangeName exchange, LinkedList<StockAction> items)
         : this(stockId, name, exchange)
     {
