@@ -26,7 +26,7 @@ internal sealed class CreateWalletHandler : IRequestHandler<CreateWallet>
         if (await _walletReadService.ExistsByNameAsync(name))
             throw new WalletAlreadyExistsException(name);
 
-        Wallet wallet = new Wallet(id, name);
+        Wallet wallet = new(id, name);
 
         await _walletRepository.AddAsync(wallet);
 
