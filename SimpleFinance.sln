@@ -19,11 +19,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleFinance.StocksService
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{86500491-2AE5-4CA4-B9CC-C34ABF7528A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFinance.Shared.Abstractions", "SimpleFinance.Shared.Abstractions\SimpleFinance.Shared.Abstractions.csproj", "{D8412AB7-1068-4865-A830-B780F403C632}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleFinance.Shared.Abstractions", "SimpleFinance.Shared.Abstractions\SimpleFinance.Shared.Abstractions.csproj", "{D8412AB7-1068-4865-A830-B780F403C632}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFinance.Application", "SimpleFinance.Application\SimpleFinance.Application.csproj", "{343F9B35-92AD-49B6-B925-9594657B1EE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleFinance.Application", "SimpleFinance.Application\SimpleFinance.Application.csproj", "{343F9B35-92AD-49B6-B925-9594657B1EE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFinance.Infrastructure", "SimpleFinance.Infrastructure\SimpleFinance.Infrastructure.csproj", "{B04FD2B9-B411-4E94-B0F0-A05DB27E0F2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleFinance.Infrastructure", "SimpleFinance.Infrastructure\SimpleFinance.Infrastructure.csproj", "{B04FD2B9-B411-4E94-B0F0-A05DB27E0F2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFinance.Shared", "SimpleFinance.Shared\SimpleFinance.Shared.csproj", "{EA58F4F5-2BD2-4740-B2B4-7EE956232CF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFinance.Api", "SimpleFinance.Api\SimpleFinance.Api.csproj", "{D76C8297-608F-4F39-B00D-7583A2F508AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +59,14 @@ Global
 		{B04FD2B9-B411-4E94-B0F0-A05DB27E0F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B04FD2B9-B411-4E94-B0F0-A05DB27E0F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B04FD2B9-B411-4E94-B0F0-A05DB27E0F2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA58F4F5-2BD2-4740-B2B4-7EE956232CF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA58F4F5-2BD2-4740-B2B4-7EE956232CF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA58F4F5-2BD2-4740-B2B4-7EE956232CF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA58F4F5-2BD2-4740-B2B4-7EE956232CF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D76C8297-608F-4F39-B00D-7583A2F508AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D76C8297-608F-4F39-B00D-7583A2F508AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D76C8297-608F-4F39-B00D-7583A2F508AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D76C8297-608F-4F39-B00D-7583A2F508AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,6 +82,8 @@ Global
 		{D8412AB7-1068-4865-A830-B780F403C632} = {86500491-2AE5-4CA4-B9CC-C34ABF7528A1}
 		{343F9B35-92AD-49B6-B925-9594657B1EE2} = {43E6CB10-9B29-48E7-ADEC-0D803808AF0A}
 		{B04FD2B9-B411-4E94-B0F0-A05DB27E0F2F} = {43E6CB10-9B29-48E7-ADEC-0D803808AF0A}
+		{EA58F4F5-2BD2-4740-B2B4-7EE956232CF5} = {86500491-2AE5-4CA4-B9CC-C34ABF7528A1}
+		{D76C8297-608F-4F39-B00D-7583A2F508AF} = {43E6CB10-9B29-48E7-ADEC-0D803808AF0A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2A8E00DF-73E1-4C5A-B0A0-01F6642AA77E}

@@ -4,7 +4,7 @@ namespace SimpleFinance.Application.Services;
 
 public interface IStockService
 {
-    public PriceDto GetCurrentPrice(string symbol);
+    public PriceDto GetCurrentPrice(string? symbol);
 
     public StocksListDto GetStockList(string? exchange, string? symbol, string? country);
 
