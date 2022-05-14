@@ -1,9 +1,10 @@
 using SimpleFinance.Application;
 using SimpleFinance.Infrastructure;
+using SimpleFinance.Shared;
 
 var builder = WebApplication.CreateBuilder(args);
 
-#warning add shared app initalizer
+builder.Services.AddShared();
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
  

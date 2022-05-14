@@ -1,6 +1,6 @@
 ﻿namespace SimpleFinance.Domain.Entities;
 
-public class StockAction : AggregateRoot<StockActionId>
+public class StockAction : AggregateRoot<Guid>
 {
     public float Quantity { get; set; }
     public float Price { get; set; }

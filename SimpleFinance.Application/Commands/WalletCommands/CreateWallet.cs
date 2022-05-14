@@ -6,7 +6,7 @@ using SimpleFinance.Domain.Repositories;
 
 namespace SimpleFinance.Application.Commands.WalletCommands;
 
-public record CreateWallet(string WalletName) : IRequest;
+public record CreateWallet(Guid Id, string WalletName) : IRequest;
 
 internal sealed class CreateWalletHandler : IRequestHandler<CreateWallet>
 {

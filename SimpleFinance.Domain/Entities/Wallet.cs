@@ -6,6 +6,10 @@ public class Wallet : AggregateRoot<WalletId>
 
     private readonly LinkedList<Stock> _items;
 
+    public Wallet()
+    {
+    }
+
     public Wallet(WalletId walletId, WalletName walletName)
     {
         Id = walletId;
