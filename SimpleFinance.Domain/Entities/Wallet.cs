@@ -1,10 +1,10 @@
 ﻿namespace SimpleFinance.Domain.Entities;
 
-public class Wallet : AggregateRoot<WalletId>
+public class Wallet : AggregateRoot<Guid>
 {
     public WalletName _name;
 
-    private readonly LinkedList<Stock> _items;
+    private readonly LinkedList<Stock> _items = new();
 
     public Wallet()
     {
@@ -14,7 +14,6 @@ public class Wallet : AggregateRoot<WalletId>
     {
         Id = walletId;
         _name = walletName;
-        _items = new();
     }
 
     public Wallet(WalletId walletId, WalletName walletName, LinkedList<Stock> items)

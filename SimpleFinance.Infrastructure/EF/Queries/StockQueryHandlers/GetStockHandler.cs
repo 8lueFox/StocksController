@@ -31,7 +31,7 @@ internal sealed class GetStockHandler : IRequestHandler<GetStock, StockDto?>
         if(stock is null)
             return null;
 
-        var price = _stockService.GetCurrentPrice(stock.Name);
+        var price = await _stockService.GetCurrentPrice(stock.Name);
 
         stock.ActualPrice = price.Value;
 

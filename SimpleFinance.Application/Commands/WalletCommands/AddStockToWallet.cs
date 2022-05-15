@@ -18,7 +18,7 @@ internal sealed class AddStockToWalletHandler : IRequestHandler<AddStockToWallet
 
     public async Task<Unit> Handle(AddStockToWallet request, CancellationToken cancellationToken)
     {
-        var wallet = await _walletRepository.GetAsync(request.WalletId);
+        var wallet = await _walletRepository.GetWithItemsAsync(request.WalletId);
 
         if (wallet is null)
             throw new WalletNotFoundException(request.WalletId);

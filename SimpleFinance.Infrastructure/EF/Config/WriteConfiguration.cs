@@ -18,7 +18,7 @@ internal sealed class WriteConfiguration : IEntityTypeConfiguration<Wallet>, IEn
 
         builder
             .Property(x => x.Id)
-            .HasConversion(id => id.Value, id => new WalletId(id));
+            .HasConversion(id => id, id => new WalletId(id));
 
         builder
             .Property(typeof(WalletName), "_name")

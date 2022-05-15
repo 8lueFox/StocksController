@@ -21,11 +21,12 @@ internal static class Extensions
         services.AddScoped<IStockActionRepository, PostgresStockActionRepository>();
         services.AddScoped<IWalletReadService, PostgresWalletReadService>();
 
-        var options = configuration.GetOptions<PostgresOptions>("Postgres");
+        var postgresOptions = configuration.GetOptions<PostgresOptions>("Postgres");
+        
         services.AddDbContext<ReadDbContext>(ctx =>
-            ctx.UseNpgsql(options.ConnectionString));
+            ctx.UseNpgsql(postgresOptions.ConnectionString));
         services.AddDbContext<WriteDbContext>(ctx =>
-            ctx.UseNpgsql(options.ConnectionString));
+            ctx.UseNpgsql(postgresOptions.ConnectionString));
 
         return services;
     }
