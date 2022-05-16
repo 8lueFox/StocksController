@@ -26,12 +26,15 @@ internal sealed class GetStockHandler : IRequestHandler<GetStock, StockDto?>
             .Where(w => w.Id == request.Id)
             .Select(w => w.AsDto())
             .AsNoTracking()
-            .SingleOrDefaultAsync();
+            .SingleOrDefaultAsync(cancellationToken);
 
         if(stock is null)
             return null;
 
         var price = await _stockService.GetCurrentPrice(stock.Name);
+
+        if (price is null)
+            return null;
 
         stock.ActualPrice = price.Value;
 

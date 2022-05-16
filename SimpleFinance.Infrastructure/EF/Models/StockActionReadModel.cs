@@ -10,5 +10,5 @@ internal class StockActionReadModel
     public DateTime ActionTime { get; set; }
     public StockActionType ActionType { get; set; }
 
-    public StockReadModel Stock { get; set; }
+    public StockReadModel Stock { get; set; } = new();
 }

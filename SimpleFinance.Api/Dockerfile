@@ -1,5 +1,3 @@
-#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
-
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
 EXPOSE 80
@@ -8,6 +6,11 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["SimpleFinance.Api/SimpleFinance.Api.csproj", "SimpleFinance.Api/"]
+COPY ["SimpleFinance.Infrastructure/SimpleFinance.Infrastructure.csproj", "SimpleFinance.Infrastructure/"]
+COPY ["SimpleFinance.Shared.Abstractions/SimpleFinance.Shared.Abstractions.csproj", "SimpleFinance.Shared.Abstractions/"]
+COPY ["SimpleFinance.Application/SimpleFinance.Application.csproj", "SimpleFinance.Application/"]
+COPY ["SimpleFinance.Domain/SimpleFinance.Domain.csproj", "SimpleFinance.Domain/"]
+COPY ["SimpleFinance.Shared/SimpleFinance.Shared.csproj", "SimpleFinance.Shared/"]
 RUN dotnet restore "SimpleFinance.Api/SimpleFinance.Api.csproj"
 COPY . .
 WORKDIR "/src/SimpleFinance.Api"

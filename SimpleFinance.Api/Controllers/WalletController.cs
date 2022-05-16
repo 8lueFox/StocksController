@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
+using SimpleFinance.Api.ResponseModels;
 using SimpleFinance.Application.Commands.WalletCommands;
 using SimpleFinance.Application.Dto;
 using SimpleFinance.Application.Queries.StockQueries;
@@ -14,10 +16,21 @@ public class WalletController : BaseController
         return Ok();
     }
 
+    [HttpGet]
+    public async Task<ActionResult<Wallets>> GetWallets([FromRoute] GetWallets query)
+    {
+        var response = await Mediator.Send(query);
+        return new Wallets
+        {
+            Items = response.ToList()
+        };
+    }
+
     [HttpGet("{Id:guid}")]
     public async Task<ActionResult<WalletDto?>> GetWallet([FromRoute] GetWallet query)
     {
-        return await Mediator.Send(query);
+        var response = await Mediator.Send(query);
+        return response;
     }
     
     [HttpGet("{Id:guid}")]
