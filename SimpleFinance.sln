@@ -29,8 +29,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleFinance.Shared", "Sim
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleFinance.Api", "SimpleFinance.Api\SimpleFinance.Api.csproj", "{D76C8297-608F-4F39-B00D-7583A2F508AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFinance.WebApp", "SimpleFinance.WebApp\SimpleFinance.WebApp.csproj", "{28CA3677-3378-4EF0-A9B6-3DC035F4BEA4}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,10 +67,6 @@ Global
 		{D76C8297-608F-4F39-B00D-7583A2F508AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D76C8297-608F-4F39-B00D-7583A2F508AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D76C8297-608F-4F39-B00D-7583A2F508AF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{28CA3677-3378-4EF0-A9B6-3DC035F4BEA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{28CA3677-3378-4EF0-A9B6-3DC035F4BEA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{28CA3677-3378-4EF0-A9B6-3DC035F4BEA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{28CA3677-3378-4EF0-A9B6-3DC035F4BEA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,7 +84,6 @@ Global
 		{B04FD2B9-B411-4E94-B0F0-A05DB27E0F2F} = {43E6CB10-9B29-48E7-ADEC-0D803808AF0A}
 		{EA58F4F5-2BD2-4740-B2B4-7EE956232CF5} = {86500491-2AE5-4CA4-B9CC-C34ABF7528A1}
 		{D76C8297-608F-4F39-B00D-7583A2F508AF} = {43E6CB10-9B29-48E7-ADEC-0D803808AF0A}
-		{28CA3677-3378-4EF0-A9B6-3DC035F4BEA4} = {43E6CB10-9B29-48E7-ADEC-0D803808AF0A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2A8E00DF-73E1-4C5A-B0A0-01F6642AA77E}
